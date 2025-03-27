@@ -1,6 +1,6 @@
 # Product Management System
 
-A web-based product management system built with ASP.NET Core Web API and HTML/CSS/JavaScript. This system allows users to manage products, brands, and categories with a modern and responsive user interface.
+A web-based product management system built with **ASP.NET Core Web API** and HTML/CSS/JavaScript. This system allows users to manage products, brands, and categories with a modern and responsive user interface.
 
 ## Features
 
@@ -32,22 +32,25 @@ A web-based product management system built with ASP.NET Core Web API and HTML/C
 
 ## Technologies Used
 
-- Backend:
-  - ASP.NET Core Web API
-  - Entity Framework Core
-  - SQL Server
+### **Backend**
+- **ASP.NET Core Web API** - Modern, high-performance web framework
+- **Entity Framework Core** - Object-Relational Mapping (ORM)
+- **SQL Server** - Relational database management system
+- **CORS** - Cross-Origin Resource Sharing support
+- **Swagger/OpenAPI** - API documentation and testing
 
-- Frontend:
-  - HTML5
-  - CSS3
-  - JavaScript (ES6+)
-  - Fetch API for HTTP requests
+### Frontend
+- HTML5 - Structure and semantics
+- CSS3 - Styling and responsive design
+- JavaScript (ES6+) - Client-side functionality
+- Fetch API - Modern HTTP requests
+- Modern UI/UX design principles
 
 ## Setup Instructions
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/product-management-system.git
+git clone https://github.com/farzamrana/Product-Management-System.git
 ```
 
 2. Open the solution in Visual Studio 2022 or later
@@ -56,7 +59,7 @@ git clone https://github.com/yourusername/product-management-system.git
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Your_Connection_String_Here"
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=ProductManagement;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
 }
 ```
@@ -102,6 +105,26 @@ Update-Database
 - PUT `/api/Categories/{id}` - Update category
 - DELETE `/api/Categories/{id}` - Delete category
 
+## Project Structure
+
+```
+Product-Management-System/
+├── Controllers/
+│   ├── ProductsController.cs
+│   ├── BrandsController.cs
+│   └── CategoriesController.cs
+├── Models/
+│   ├── Product.cs
+│   ├── Brand.cs
+│   └── Category.cs
+├── Data/
+│   └── ApplicationDbContext.cs
+├── wwwroot/
+│   ├── index.html
+│   └── create-product.html
+└── Program.cs
+```
+
 ## Contributing
 
 1. Fork the repository
@@ -117,4 +140,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - ASP.NET Core team for the excellent framework
-- All contributors who help improve this project 
+- All contributors who help improve this project
+- The open-source community for their valuable resources and tools
+
+## Contact
+
+- GitHub: [farzamrana](https://github.com/farzamrana)
+- Project Link: [https://github.com/farzamrana/Product-Management-System](https://github.com/farzamrana/Product-Management-System)
